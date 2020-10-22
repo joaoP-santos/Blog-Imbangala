@@ -1,0 +1,64 @@
+#navbar {
+  width: 100%;
+  height: 114px;
+  left: 0px;
+  top: 0px;
+
+  background: #0d1f2d;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navbar #logo {
+  width: 299px;
+  height: 100%;
+
+  background: #ff8600;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navbar #logo #logotype {
+  width: 99px;
+}
+
+#navbar #logo h1 {
+  font-family: var(--ibm-plex-sans);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1b120e;
+}
+
+#navbar #links {
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar #links .navbar-link {
+  width: 160px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--comfortaa);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #6FD08C;
+}
+
+#navbar #links .navbar-link img{
+  width: 40px;
+  margin: 10px;
+}
