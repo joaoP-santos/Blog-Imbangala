@@ -19,40 +19,35 @@
 }
 
 #landing #posts-carrousel-container {
-	height: 30.5vh;
+  height: 30.5vh;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #landing #posts-carrousel-container img {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #landing #posts-carrousel-container .post-carrousel {
-  width: 350px;
+  width: 27%;
   height: 178px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-	background: url("../images/PostImageExample.png");
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: url("../images/PostImageExample.png");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #landing #posts-carrousel-container .post-carrousel .text {
-	padding: 10px;
-
-	display: flex;
-	flex-direction: column;	
-	justify-content: end;
-	align-items: start;
+  padding: 10px;
 
   background-color: rgba(27, 18, 14, 0.7);
 }
@@ -63,18 +58,18 @@
   font-family: var(--hind);
   font-style: normal;
   font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	color: #E5D9F2;
+  font-size: 18px;
+  line-height: 25px;
+  color: #e5d9f2;
 }
 
 #landing #posts-carrousel-container .post-carrousel .text h2 {
-	margin: 0;
+  margin: 0;
 
   font-family: var(--hind);
   font-style: normal;
   font-weight: normal;
-	font-size: 14px;
-	line-height: 15px;
-	color: #E5D9F2;
+  font-size: 14px;
+  line-height: 15px;
+  color: #e5d9f2;
 }
