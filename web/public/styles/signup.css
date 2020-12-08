@@ -1,0 +1,117 @@
+#landing #background-one {
+   background-color: #0D1F2D;
+   opacity: 80%;
+   z-index: 1;
+
+   position: absolute;
+
+   width: 70vh;
+   height: 70vh;
+
+   left: 0;
+   top: 0;
+}
+
+#landing #background-two {
+   background-color: #0D1F2D;
+   opacity: 70%;
+   z-index: 1;
+
+   position: absolute;
+
+   width: 70vh;
+   height: 70vh;
+
+   right: 0;
+   bottom: 0;
+}
+
+#navbar {
+   position: absolute;
+   z-index: 2;
+}
+
+#content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100vh;
+
+   background: #e5d9f2;
+}
+
+#content form {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+   width: 50vw;
+   height: 65vh;
+
+   background: #0d1f2d;
+}
+
+#content form h1 {
+   color: #6fd08c;
+
+   font-family: var(--ibm-plex-sans);
+}
+
+#content form div#inputs {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   width: 80%;
+}
+
+#content form div#inputs div {
+   display: flex;
+   flex-direction: column;
+
+   width: 40%;
+
+   margin: 10px;
+}
+
+#content form div#inputs div label {
+   margin-bottom: 3px;
+
+   color: #4ea5d9;
+   font-size: 0.8em;
+   font-family: var(--comfortaa);
+}
+
+#content form div#inputs div input {
+   width: 100%;
+   height: 50px;
+
+   text-align: center;
+
+   background: #e5d9f2;
+   border: none;
+   border-radius: 10px;
+
+   font-family: var(--hind);
+   font-size: 15px;
+}
+
+#content form button {
+    width: 100px;
+    height: 33px;   
+    margin-top: 50px;
+
+    font-family: var(--ibm-plex-sans);
+    font-weight: bold;
+    font-size: 15px;
+    color: #1B120E;
+
+    background-color: #FF8600;
+
+    border: none;
+    border-radius: 7px;
+}

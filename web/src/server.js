@@ -8,7 +8,7 @@ const pages = {
       return res.render("index.html")
    },
    signUp: (req, res) => {
-      return res.render("sign-up.html")
+      return res.render("signup.html")
    },
 }
 
