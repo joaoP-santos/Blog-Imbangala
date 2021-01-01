@@ -25,30 +25,48 @@
          </nav>
          <div id="background-one"></div>
          <div id="content">
-            <form action="">
-                <h1>Criar conta</h1>
-                <div id="inputs">
-                   <div>
-                      <label for="name">Nome completo</label>
-                      <input type="text" name="name" required />
-                   </div>
-                   <div>
-                      <label for="email">Email</label>
-                      <input type="email" name="email" required />
-                   </div>
-                   <div>
-                      <label for="password">Senha</label>
-                      <input type="password" name="password" required />
-                   </div>
-                   <div>
-                      <label for="password">Confirmar senha</label>
-                      <input type="password" name="confirm-password" required />
-                   </div>
-                </div>
-                <button>REGISTRAR</button>
-             </form>
+            <form onsubmit="return false">
+               <h1>Criar conta</h1>
+               <div id="inputs">
+                  <div>
+                     <label for="name">Nome completo</label>
+                     <input type="text" name="name" id="name" required />
+                  </div>
+                  <div>
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email" required />
+                  </div>
+                  <div>
+                     <label for="password">Senha</label>
+                     <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                     />
+                  </div>
+                  <div>
+                     <label for="confirm-password">Confirmar senha</label>
+                     <input
+                        type="password"
+                        name="confirm-password"
+                        id="confirm-password"
+                        required
+                     />
+                  </div>
+               </div>
+               <span id="output"></span>
+               <button>REGISTRAR</button>
+            </form>
          </div>
          <div id="background-two"></div>
       </div>
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+      <script src="./scripts/database/signup.js"></script>
+      <script src="./scripts/database/app.js"></script>
+      
    </body>
 </html>

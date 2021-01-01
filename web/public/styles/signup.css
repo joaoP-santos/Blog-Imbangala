@@ -1,5 +1,5 @@
 #landing #background-one {
-   background-color: #0D1F2D;
+   background-color: #0d1f2d;
    opacity: 80%;
    z-index: 1;
 
@@ -13,9 +13,9 @@
 }
 
 #landing #background-two {
-   background-color: #0D1F2D;
+   background-color: #0d1f2d;
    opacity: 70%;
-   z-index: 1;
+   z-index: 2;
 
    position: absolute;
 
@@ -53,6 +53,7 @@
    height: 65vh;
 
    background: #0d1f2d;
+   z-index: 10;
 }
 
 #content form h1 {
@@ -100,18 +101,24 @@
    font-size: 15px;
 }
 
+#content form span {
+   font-family: var(--comfortaa);
+   color: #6fd08c;
+   font-size: 10px;
+}
+
 #content form button {
-    width: 100px;
-    height: 33px;   
-    margin-top: 50px;
+   width: 100px;
+   height: 33px;
+   margin-top: 50px;
 
-    font-family: var(--ibm-plex-sans);
-    font-weight: bold;
-    font-size: 15px;
-    color: #1B120E;
+   font-family: var(--ibm-plex-sans);
+   font-weight: bold;
+   font-size: 15px;
+   color: #1b120e;
 
-    background-color: #FF8600;
+   background-color: #ff8600;
 
-    border: none;
-    border-radius: 7px;
+   border: none;
+   border-radius: 7px;
 }
