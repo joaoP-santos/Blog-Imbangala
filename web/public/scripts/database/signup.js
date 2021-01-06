@@ -12,12 +12,10 @@ function signUp() {
       auth
          .createUserWithEmailAndPassword(email.value, password.value)
          .then((user) => {
-            const database = firebase.firestore()
-
             const date = new Date()
             const createdAt = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
 
-            database.doc(`/users/${user.user.uid}`).set({
+            firestore.doc(`/users/${user.user.uid}`).set({
                name: name.value,
                email: user.user.email,
                createdAt: createdAt,
