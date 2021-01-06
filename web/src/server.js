@@ -10,6 +10,10 @@ const pages = {
    signUp: (req, res) => {
       return res.render("signup.html")
    },
+   login: (req, res) => {
+      return res.render("login.html")
+   },
+   
 }
 
 nunjucks.configure("src/views/", {
@@ -22,6 +26,7 @@ server
 
    .get("/", pages.landing)
    .get("/criar-conta", pages.signUp)
+   .get("/login", pages.login)
 
    .listen(5500)
 

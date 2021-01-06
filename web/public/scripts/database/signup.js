@@ -9,8 +9,7 @@ let form = document.querySelector("form")
 form.addEventListener("submit", signUp)
 function signUp() {
    if (password.value == confirmPassword.value) {
-      firebase
-         .auth()
+      auth
          .createUserWithEmailAndPassword(email.value, password.value)
          .then((user) => {
             const database = firebase.firestore()
@@ -31,8 +30,6 @@ function signUp() {
          .catch((error) => {
             var errorCode = error.code
             var errorMessage = error.message
-            console.log(`ERROR: ${errorMessage}
-  code ${errorCode}`)
             switch (errorCode) {
                case "auth/weak-password":
                   output.innerHTML = "A senha é fraca demais."

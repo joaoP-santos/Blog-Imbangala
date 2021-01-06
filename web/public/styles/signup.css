@@ -105,6 +105,7 @@
    font-family: var(--comfortaa);
    color: #6fd08c;
    font-size: 10px;
+   text-align: center;
 }
 
 #content form button {
